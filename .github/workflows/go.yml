@@ -29,3 +29,6 @@ jobs:
 
     - name: Test
       run: go test -v .
+
+    - name: Format
+      run: test -z "$(gofmt -d .)"
