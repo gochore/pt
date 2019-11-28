@@ -1,6 +1,8 @@
 # pt
 
-return pointer of basic type.
+![](https://github.com/gochore/pt/workflows/Go/badge.svg)
+
+return pointer of basic type value.
 
 ```go
 package main
