@@ -1,8 +1,3 @@
-# pt
-
-return pointer of basic type.
-
-```go
 package main
 
 import "github.com/gochore/pt"
@@ -23,4 +18,3 @@ func main() {
 func f(*int) {
 
 }
-```
