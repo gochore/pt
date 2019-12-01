@@ -1,6 +1,7 @@
 # pt
 
-[![](https://github.com/gochore/pt/workflows/Go/badge.svg)](https://github.com/gochore/pt/actions)
+[![Go Action](https://github.com/gochore/pt/workflows/Go/badge.svg)](https://github.com/gochore/pt/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gochore/pt)](https://goreportcard.com/report/github.com/gochore/pt)
 
 return pointer of basic type value.
 
