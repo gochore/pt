@@ -5,7 +5,7 @@
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gochore/pt)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/gochore/pt)
 
-return pointer of basic type value.
+Return pointer of basic type value.
 
 ```go
 package main
