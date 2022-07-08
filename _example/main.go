@@ -13,6 +13,8 @@ func main() {
 	// good
 	f(pt.Int(100))
 
+	// good, with generics, need go1.18+
+	f(pt.P(100))
 }
 
 func f(*int) {

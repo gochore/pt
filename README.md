@@ -26,6 +26,8 @@ func main() {
 	// good
 	f(pt.Int(100))
 
+	// good, with generics, need go1.18+
+	f(pt.P(100))
 }
 
 func f(*int) {
@@ -34,6 +36,17 @@ func f(*int) {
 ```
 
 ## Document
+
+### go1.18 and above
+
+#### func P
+
+```go
+func P[V any](v V) *V
+```
+P return pointer of v
+
+### before go1.18
 
 #### func  Bool
 
