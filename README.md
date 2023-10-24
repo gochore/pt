@@ -17,22 +17,37 @@ package main
 import "github.com/gochore/pt"
 
 func main() {
-	// wrong
-	f(&100) // can not compile
+	// 💀 It cannot work because Go does not allow taking the address of a constant or literal.
+	f(&100)
 
-	// bad
+	// ☹️ It works, but it requires two lines and declares a variable that could pollute the namespace.
 	v := 100
 	f(&v)
 
-	// good
+	// 😊 It works. Only one line and no new variables.
+	// But you have to use different functions for different types.
+	// It's the only way to do it before go1.18.
 	f(pt.Int(100))
 
-	// good, with generics, need go1.18+
+	// 🤩 It works. Only one line and no new variables, and a single function for all types.
+	// It's based on generics, so it requires go1.18 and above.
 	f(pt.P(100))
 }
 
-func f(*int) {
+func f(p *int) {
+	// 💀 It could panic if p is nil.
+	println(*p)
 
+	// ☹️ It's safe, but it requires multiple lines and declares a variable that could pollute the namespace.
+	v := 0
+	if p != nil {
+		v = *p
+	}
+	println(v)
+
+	// 🤩 It's safe. Only one line and no new variables.
+	// It's based on generics, so it requires go1.18 and above.
+	println(pt.V(p))
 }
 ```
 
