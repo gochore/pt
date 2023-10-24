@@ -3,6 +3,14 @@
 package pt
 
 // P return pointer of v
-func P[V any](v V) *V {
+func P[T any](v T) *T {
 	return &v
+}
+
+// V return value of p
+func V[T any](p *T) T {
+	if p == nil {
+		return *new(T)
+	}
+	return *p
 }
