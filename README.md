@@ -1,7 +1,8 @@
 # pt
 
-[![Build Status](https://travis-ci.com/gochore/pt.svg?branch=master)](https://travis-ci.com/gochore/pt)
-[![codecov](https://codecov.io/gh/gochore/pt/branch/master/graph/badge.svg)](https://codecov.io/gh/gochore/pt)
+[![Go Reference](https://pkg.go.dev/badge/github.com/gochore/pt.svg)](https://pkg.go.dev/github.com/gochore/pt)
+[![Actions](https://github.com/gochore/pt/actions/workflows/test.yaml/badge.svg)](https://github.com/gochore/pt/actions)
+[![Codecov](https://codecov.io/gh/gochore/pt/branch/master/graph/badge.svg)](https://codecov.io/gh/gochore/pt)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gochore/pt)](https://goreportcard.com/report/github.com/gochore/pt)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gochore/pt)](https://github.com/gochore/pt/blob/master/go.mod)
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/gochore/pt)](https://github.com/gochore/pt/releases)
