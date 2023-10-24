@@ -26,11 +26,11 @@ func main() {
 
 	// 😊 It works. Only one line and no new variables.
 	// But you have to use different functions for different types.
-	// It's the only way to do it before go1.18.
+	// It's the only way to do it before Go1.18.
 	f(pt.Int(100))
 
 	// 🤩 It works. Only one line and no new variables, and a single function for all types.
-	// It's based on generics, so it requires go1.18 and above.
+	// It's based on generics, so it requires Go1.18 and above.
 	f(pt.P(100))
 }
 
@@ -46,165 +46,174 @@ func f(p *int) {
 	println(v)
 
 	// 🤩 It's safe. Only one line and no new variables.
-	// It's based on generics, so it requires go1.18 and above.
+	// It's based on generics, so it requires Go1.18 and above.
 	println(pt.V(p))
 }
 ```
 
 ## Document
 
-### go1.18 and above
+### Go1.18 and later
 
 #### func P
 
 ```go
-func P[V any](v V) *V
+func P[T any](v T) *T
 ```
-P return pointer of v
+P returns pointer of v.
+It's a short form of "Pointer" or "GetPointer".
 
-### before go1.18
+#### func V
 
-#### func  Bool
+```go
+func V[T any](p *T) T
+```
+V returns value of p. If p is nil, return zero value of T.
+It's a short form of "Value" or "GetValue".
+
+### Before Go1.18 (deprecated)
+
+#### func Bool
 
 ```go
 func Bool(v bool) *bool
 ```
 Bool return pointer of bool
 
-#### func  Byte
+#### func Byte
 
 ```go
 func Byte(v byte) *byte
 ```
 Byte return pointer of byte
 
-#### func  Complex128
+#### func Complex128
 
 ```go
 func Complex128(v complex128) *complex128
 ```
 Complex128 return pointer of complex128
 
-#### func  Complex64
+#### func Complex64
 
 ```go
 func Complex64(v complex64) *complex64
 ```
 Complex64 return pointer of complex64
 
-#### func  Duration
+#### func Duration
 
 ```go
 func Duration(v time.Duration) *time.Duration
 ```
 Duration return pointer of time.Duration
 
-#### func  Float32
+#### func Float32
 
 ```go
 func Float32(v float32) *float32
 ```
 Float32 return pointer of float32
 
-#### func  Float64
+#### func Float64
 
 ```go
 func Float64(v float64) *float64
 ```
 Float64 return pointer of float64
 
-#### func  Int
+#### func Int
 
 ```go
 func Int(v int) *int
 ```
 Int return pointer of int
 
-#### func  Int16
+#### func Int16
 
 ```go
 func Int16(v int16) *int16
 ```
 Int16 return pointer of int16
 
-#### func  Int32
+#### func Int32
 
 ```go
 func Int32(v int32) *int32
 ```
 Int32 return pointer of int32
 
-#### func  Int64
+#### func Int64
 
 ```go
 func Int64(v int64) *int64
 ```
 Int64 return pointer of int64
 
-#### func  Int8
+#### func Int8
 
 ```go
 func Int8(v int8) *int8
 ```
 Int8 return pointer of int8
 
-#### func  Rune
+#### func Rune
 
 ```go
 func Rune(v rune) *rune
 ```
 Rune return pointer of rune
 
-#### func  String
+#### func String
 
 ```go
 func String(v string) *string
 ```
 String return pointer of string
 
-#### func  Time
+#### func Time
 
 ```go
 func Time(v time.Time) *time.Time
 ```
 Time return pointer of time.Time
 
-#### func  Uint
+#### func Uint
 
 ```go
 func Uint(v uint) *uint
 ```
 Uint return pointer of uint
 
-#### func  Uint16
+#### func Uint16
 
 ```go
 func Uint16(v uint16) *uint16
 ```
 Uint16 return pointer of uint16
 
-#### func  Uint32
+#### func Uint32
 
 ```go
 func Uint32(v uint32) *uint32
 ```
 Uint32 return pointer of uint32
 
-#### func  Uint64
+#### func Uint64
 
 ```go
 func Uint64(v uint64) *uint64
 ```
 Uint64 return pointer of uint64
 
-#### func  Uint8
+#### func Uint8
 
 ```go
 func Uint8(v uint8) *uint8
 ```
 Uint8 return pointer of uint8
 
-#### func  Uintptr
+#### func Uintptr
 
 ```go
 func Uintptr(v uintptr) *uintptr
