@@ -2,7 +2,17 @@
 
 package pt
 
-// P return pointer of v
-func P[V any](v V) *V {
+// P returns pointer of v.
+// It's a short form of "Pointer" or "GetPointer".
+func P[T any](v T) *T {
 	return &v
+}
+
+// V returns value of p. If p is nil, return zero value of T.
+// It's a short form of "Value" or "GetValue".
+func V[T any](p *T) T {
+	if p == nil {
+		return *new(T)
+	}
+	return *p
 }
