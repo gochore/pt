@@ -78,144 +78,144 @@ It's a short form of "Value" or "GetValue".
 ```go
 func Bool(v bool) *bool
 ```
-Bool return pointer of bool
+Bool returns pointer of bool
 
 #### func Byte
 
 ```go
 func Byte(v byte) *byte
 ```
-Byte return pointer of byte
+Byte returns pointer of byte
 
 #### func Complex128
 
 ```go
 func Complex128(v complex128) *complex128
 ```
-Complex128 return pointer of complex128
+Complex128 returns pointer of complex128
 
 #### func Complex64
 
 ```go
 func Complex64(v complex64) *complex64
 ```
-Complex64 return pointer of complex64
+Complex64 returns pointer of complex64
 
 #### func Duration
 
 ```go
 func Duration(v time.Duration) *time.Duration
 ```
-Duration return pointer of time.Duration
+Duration returns pointer of time.Duration
 
 #### func Float32
 
 ```go
 func Float32(v float32) *float32
 ```
-Float32 return pointer of float32
+Float32 returns pointer of float32
 
 #### func Float64
 
 ```go
 func Float64(v float64) *float64
 ```
-Float64 return pointer of float64
+Float64 returns pointer of float64
 
 #### func Int
 
 ```go
 func Int(v int) *int
 ```
-Int return pointer of int
+Int returns pointer of int
 
 #### func Int16
 
 ```go
 func Int16(v int16) *int16
 ```
-Int16 return pointer of int16
+Int16 returns pointer of int16
 
 #### func Int32
 
 ```go
 func Int32(v int32) *int32
 ```
-Int32 return pointer of int32
+Int32 returns pointer of int32
 
 #### func Int64
 
 ```go
 func Int64(v int64) *int64
 ```
-Int64 return pointer of int64
+Int64 returns pointer of int64
 
 #### func Int8
 
 ```go
 func Int8(v int8) *int8
 ```
-Int8 return pointer of int8
+Int8 returns pointer of int8
 
 #### func Rune
 
 ```go
 func Rune(v rune) *rune
 ```
-Rune return pointer of rune
+Rune returns pointer of rune
 
 #### func String
 
 ```go
 func String(v string) *string
 ```
-String return pointer of string
+String returns pointer of string
 
 #### func Time
 
 ```go
 func Time(v time.Time) *time.Time
 ```
-Time return pointer of time.Time
+Time returns pointer of time.Time
 
 #### func Uint
 
 ```go
 func Uint(v uint) *uint
 ```
-Uint return pointer of uint
+Uint returns pointer of uint
 
 #### func Uint16
 
 ```go
 func Uint16(v uint16) *uint16
 ```
-Uint16 return pointer of uint16
+Uint16 returns pointer of uint16
 
 #### func Uint32
 
 ```go
 func Uint32(v uint32) *uint32
 ```
-Uint32 return pointer of uint32
+Uint32 returns pointer of uint32
 
 #### func Uint64
 
 ```go
 func Uint64(v uint64) *uint64
 ```
-Uint64 return pointer of uint64
+Uint64 returns pointer of uint64
 
 #### func Uint8
 
 ```go
 func Uint8(v uint8) *uint8
 ```
-Uint8 return pointer of uint8
+Uint8 returns pointer of uint8
 
 #### func Uintptr
 
 ```go
 func Uintptr(v uintptr) *uintptr
 ```
-Uintptr return pointer of uintptr
+Uintptr returns pointer of uintptr
