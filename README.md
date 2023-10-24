@@ -20,7 +20,7 @@ func main() {
 	// 💀 It cannot work because Go does not allow taking the address of a constant or literal.
 	f(&100)
 
-	// ☹️ It works, but it requires two lines and declares a variable that could pollute the namespace.
+	// 😕 It works, but it requires two lines and declares a variable that could pollute the namespace.
 	v := 100
 	f(&v)
 
@@ -38,7 +38,7 @@ func f(p *int) {
 	// 💀 It could panic if p is nil.
 	println(*p)
 
-	// ☹️ It's safe, but it requires multiple lines and declares a variable that could pollute the namespace.
+	// 😕 It's safe, but it requires multiple lines and declares a variable that could pollute the namespace.
 	v := 0
 	if p != nil {
 		v = *p
